@@ -19,9 +19,9 @@ const Cart = () => {
             <div>
                 {products}
             </div>
-            <div>
-                <Link to="/">Return To Shop</Link>
-                <button>Update Cart</button>
+            <div className="flex justify-between mt-4">
+                <Link to="/" className="px-6 py-2 border border-black">Return To Shop</Link>
+                <button className="px-6 py-2 border border-black">Update Cart</button>
             </div>
         </div>
     )
