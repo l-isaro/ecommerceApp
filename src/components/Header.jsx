@@ -8,9 +8,9 @@ const Header  = () => {
         <div>
             <p className="bg-black p-2 w-full text-center text-sm text-white">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!  <span className="ml-2 underline">ShopNow</span></p>
             <nav className="flex justify-between items-center px-10 pt-5">
-                <h1 className="font-bold text-2xl">EXCLUSIVE</h1>
+                <Link to="/" className="font-bold text-2xl">EXCLUSIVE</Link>
                 <ul className="flex gap-4">
-                    <li>Home</li>
+                    <Link to="/">Home</Link>
                     <li>Contact</li>
                     <li>About</li>
                     <li>Sign Up</li>

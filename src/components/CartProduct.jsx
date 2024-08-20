@@ -5,13 +5,13 @@ const CartProduct = (props) => {
     const discountedPrice = props.item.price - (props.item.price * (props.item.discount / 100))
     const [subtotal, setSubtotal] = useState(discountedPrice)
     const [quantity, setQuantity] = useState(1)
-
-    console.log()
+    const subtotals = [];
 
     function handleInput(event) {
         const newQuantity = event.target.value || 1
         setQuantity(newQuantity)
         setSubtotal(discountedPrice * newQuantity);
+        subtotals.push(discountedPrice * newQuantity);
     }
 
     return(
@@ -25,3 +25,4 @@ const CartProduct = (props) => {
 }
 
 export default CartProduct
+export {subtotals} 
